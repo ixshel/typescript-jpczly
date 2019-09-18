@@ -1,0 +1,48 @@
+
+<h2>Compare Arrays</h2>
+<p>Does the elements in array 1 are in array 2? if not show me the elemets are not <br ><span style="font-weight: bold; color: red">Only works with double quotes</span></p>
+
+<hr >
+
+<div>
+	<div style="display: inline-block; padding: 0.25rem 2.5rem">
+    <label>Array 1: </label>
+  <br >
+  <textarea placeholder='[{"name": "ixshel"}]'  id="target"></textarea>
+  </div>
+
+  <div style="display: inline-block">
+    <label>Reference field: </label>
+    <br >
+    <select id="targetDD">
+      <option>Select one</option>
+    </select>
+  </div>
+</div>
+
+<hr >
+
+<div>
+	<div style="display: inline-block; padding: 0.25rem 2.5rem">
+		<label>Array 2: </label>
+  <br >
+  <textarea placeholder='[{"name": "ixshel"}, {"name": "John"}]'' id="source"></textarea>
+  </div>
+
+  <div style="display: inline-block">
+    <label>Reference field: </label>
+    <br >
+    <select id="sourceDD">
+      <option>Select one</option>
+    </select>
+  </div>
+</div>
+
+<p id="checkResult"></p>
+<p id="itemsNotIncluded"></p>
+
+<button class="blue" id="populate"> Populate Values </button>
+&nbsp;&nbsp;&nbsp;
+<button class="orange" id="validate"> Validate </button>
+&nbsp;&nbsp;&nbsp;
+<button id="clear"> Clear </button>
